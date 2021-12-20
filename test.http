@@ -1,0 +1,45 @@
+GET http://localhost:5000/api/items
+
+###
+POST http://localhost:5000/api/items
+Content-Type: application/json
+
+{
+    "item_id":"3",
+    "title":"mydemo3",
+    "images":[
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZH27uuEQFZJqziB6uzcUkACMhbbpWN9bmNNncxbbZEj6lFQS9DPgZCzG7e3Ve0ZEiLWs&usqp=CAU",
+        "https://www.pngitem.com/pimgs/m/77-773758_cloud-aws-hd-png-download.png",
+        "https://amenys.com/wp-content/uploads/2020/01/AWS_EC2.png"
+    ],
+    "description": "demoitem3",
+    "content": "patelsaheb",
+    "colors": ["orange", "green", "red"],
+    "sizes": ["big","small","medium", "NA"],
+    "price": 103
+}
+
+###
+DELETE http://localhost:5000/api/items/618fcea4b623bb40dcb28b7e
+
+###
+PUT  http://localhost:5000/api/items/618fd03aea8fcf4480c0161d
+Content-Type: application/json
+
+{
+    "item_id":"3",
+    "title":"mydemo3 updated",
+    "images":[
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZH27uuEQFZJqziB6uzcUkACMhbbpWN9bmNNncxbbZEj6lFQS9DPgZCzG7e3Ve0ZEiLWs&usqp=CAU",
+        "https://www.pngitem.com/pimgs/m/77-773758_cloud-aws-hd-png-download.png",
+        "https://amenys.com/wp-content/uploads/2020/01/AWS_EC2.png"
+    ],
+    "description": "demoitem3",
+    "content": "patelsaheb",
+    "colors": ["orange", "green", "red"],
+    "sizes": ["big","small","medium", "NA"],
+    "price": 10332
+}
+
+###
+GET http://localhost:5000/api/items/618fd03aea8fcf4480c0161d
